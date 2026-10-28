@@ -3,26 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: kronos-forge-catalogo:latest
-    container_name: catalogo-web
+    image: aurora-catalogo:latest
+    container_name: aurora-catalogo-web
     restart: unless-stopped
     ports:
       - "8080:80"
-    networks:
-      - catalogo-net
-
-  cloudflared:
-    image: cloudflare/cloudflared:latest
-    container_name: catalogo-tunnel
-    restart: unless-stopped
-    depends_on:
-      - catalogo-web
-    command: tunnel --no-autoupdate --metrics 0.0.0.0:2000 --url http://catalogo-web:80
-    ports:
-      - "2000:2000"
-    networks:
-      - catalogo-net
-
-networks:
-  catalogo-net:
-    driver: bridge
