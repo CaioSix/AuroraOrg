@@ -260,11 +260,11 @@ export default function NicheCatalog({ onRequestQuote }) {
                     </span>
                   </div>
 
-                  {/* Botão que renderiza/abre a página HTML/CSS/JS separada ou sistema externo de demonstração */}
+                  {/* Botão que abre a página de demonstração sempre em uma nova aba */}
                   <a
                     href={liveDemoHref}
-                    target={liveDemoHref.startsWith('http') ? '_blank' : '_self'}
-                    rel={liveDemoHref.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 bg-slate-800/90 hover:bg-slate-700 text-cyan-300 border border-cyan-500/30 transition"
                   >
                     <Eye className="w-4 h-4" />
