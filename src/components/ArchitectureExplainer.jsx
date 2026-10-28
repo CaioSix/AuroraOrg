@@ -8,10 +8,8 @@ import {
   RefreshCw,
   CheckCircle2,
   ArrowRight,
-  Monitor,
   Smartphone,
   ShieldCheck,
-  Sparkles,
   HelpCircle
 } from 'lucide-react';
 import { ARCHITECTURES, COMPARISON_ROWS } from '../data/catalogData';
@@ -57,17 +55,16 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-medium mb-4">
             <HelpCircle className="w-3.5 h-3.5" />
-            <span>Guia Sem "Tecniquês" para Donos de Negócio</span>
+            <span>Explicação Simples e Direta para o Seu Negócio</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
-            SPA, Sistema em Cloud ou On-Premise:{' '}
+            Catálogo no Celular, Sistema pela Internet ou Instalado na Loja:{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-300 to-emerald-400">
-              Qual é a diferença?
+              Qual Escolher?
             </span>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
-            Como engenheiros de software e especialistas em confiabilidade (SRE), nós não empurramos o sistema mais caro:
-            desenhamos exatamente a estrutura que faz sentido para o momento e a operação da sua empresa.
+            Nós não empurramos o sistema mais caro: desenhamos exatamente a solução que faz sentido para o tamanho e para a rotina da sua empresa.
           </p>
         </div>
 
@@ -127,13 +124,13 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
           })}
         </div>
 
-        {/* Interactive Playground: Test SPA vs Site Antigo + Simulador de Queda de Internet */}
+        {/* Interactive Playground */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          {/* Box 1: O que é uma SPA na prática (Simulador interativo) */}
+          {/* Box 1: Velocidade Catálogo no Celular vs Site Antigo */}
           <div className="glass-card rounded-2xl p-6 sm:p-8 border border-amber-500/20">
             <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
               <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-amber-400">
-                <Zap className="w-4 h-4" /> Teste você mesmo: O que é uma SPA?
+                <Zap className="w-4 h-4" /> Teste a Velocidade na Prática
               </span>
               <div className="inline-flex rounded-lg bg-slate-950 p-1 border border-slate-800">
                 <button
@@ -145,7 +142,7 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  Nossa SPA (Instantânea)
+                  Nosso Catálogo Rápido
                 </button>
                 <button
                   type="button"
@@ -162,8 +159,8 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
             </div>
 
             <p className="text-sm text-slate-300 mb-5">
-              Clique nas abas do mini-aplicativo abaixo e sinta a diferença de velocidade entre uma{' '}
-              <strong className="text-amber-300">SPA moderna</strong> (como este catálogo que você está navegando agora) e um site tradicional que recarrega a cada clique:
+              Clique nas abas abaixo e veja a diferença entre o nosso{' '}
+              <strong className="text-amber-300">Catálogo no Celular</strong> (que abre na hora) e um site antigo que trava e recarrega a tela a cada clique:
             </p>
 
             {/* Mini Browser Mockup */}
@@ -174,20 +171,20 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
                   <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
                   <span className="ml-2 text-xs font-mono text-slate-400">
-                    {spaDemoMode === 'spa' ? 'app.seu-negocio.com.br (SPA)' : 'site-antigo.com.br/pagina.php'}
+                    {spaDemoMode === 'spa' ? 'seu-negocio.com.br' : 'site-antigo-lento.com.br'}
                   </span>
                 </div>
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">
-                  {spaDemoMode === 'spa' ? '⚡ 0ms transição' : '🐢 ~950ms reload'}
+                  {spaDemoMode === 'spa' ? '⚡ Abre na hora' : '🐢 Demora p/ carregar'}
                 </span>
               </div>
 
               {/* Navigation inside mockup */}
               <div className="flex border-b border-slate-800 bg-slate-900/50 px-3 pt-2 gap-2">
                 {[
-                  { id: 'servicos', label: '1. Catálogo / Serviços' },
+                  { id: 'servicos', label: '1. Serviços & Preços' },
                   { id: 'horarios', label: '2. Horários Livres' },
-                  { id: 'confirmar', label: '3. Orçamento Rápido' }
+                  { id: 'confirmar', label: '3. Agendar' }
                 ].map((t) => (
                   <button
                     key={t.id}
@@ -210,10 +207,10 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
                   <div className="flex flex-col items-center justify-center py-6 text-slate-400">
                     <RefreshCw className="w-6 h-6 animate-spin text-rose-400 mb-2" />
                     <span className="text-xs font-mono text-rose-300">
-                      Tela branca... recarregando toda a página do servidor...
+                      Tela branca... esperando carregar outra página...
                     </span>
                     <span className="text-[11px] text-slate-500 mt-1">
-                      (É aqui que muitos clientes no 4G desistem e fecham o site!)
+                      (É nessa demora que muitos clientes no celular desistem e fecham!)
                     </span>
                   </div>
                 ) : (
@@ -226,7 +223,7 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
                         </div>
                         <div className="flex items-center justify-between p-2.5 rounded-lg bg-slate-900 border border-slate-800">
                           <span className="text-xs font-medium text-white">Tatuagem Fine Line (Até 10cm)</span>
-                          <span className="text-xs font-bold text-emerald-400">Simular valor →</span>
+                          <span className="text-xs font-bold text-emerald-400">Ver valor →</span>
                         </div>
                       </div>
                     )}
@@ -248,9 +245,9 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
                     {demoTab === 'confirmar' && (
                       <div className="p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-between">
                         <div>
-                          <p className="text-xs font-bold text-emerald-300">Pronto sem recarregar a página!</p>
+                          <p className="text-xs font-bold text-emerald-300">Tudo rápido e sem travar!</p>
                           <p className="text-[11px] text-slate-300">
-                            Seu cliente conclui o agendamento ou pedido em menos de 15 segundos.
+                            Seu cliente escolhe e envia o pedido em menos de 15 segundos.
                           </p>
                         </div>
                         <Smartphone className="w-6 h-6 text-emerald-400 shrink-0" />
@@ -262,11 +259,11 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
             </div>
           </div>
 
-          {/* Box 2: Simulador SRE de Queda de Internet (Cloud vs On-Premise) */}
+          {/* Box 2: Simulador de Queda de Internet */}
           <div className="glass-card rounded-2xl p-6 sm:p-8 border border-emerald-500/20">
             <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
               <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-400">
-                <ShieldCheck className="w-4 h-4" /> Simulador SRE: E se a internet cair?
+                <ShieldCheck className="w-4 h-4" /> Teste Prático: E se a internet cair?
               </span>
 
               <button
@@ -280,50 +277,50 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
               >
                 {internetDownSim ? (
                   <>
-                    <WifiOff className="w-4 h-4" /> Internet da Rua: CORTADA (Clique p/ Restaurar)
+                    <WifiOff className="w-4 h-4" /> Internet da Rua: CORTADA (Clique p/ Voltar)
                   </>
                 ) : (
                   <>
-                    <Wifi className="w-4 h-4" /> Internet da Rua: ONLINE (Clique p/ Simular Queda)
+                    <Wifi className="w-4 h-4" /> Internet da Rua: FUNCIONANDO (Clique p/ Cortar)
                   </>
                 )}
               </button>
             </div>
 
             <p className="text-sm text-slate-300 mb-5">
-              Clique no botão acima para simular o rompimento de fibra óptica na rua da sua empresa e veja como cada arquitetura se comporta:
+              Clique no botão acima para simular que a operadora de internet do seu bairro ficou fora do ar e veja como cada opção funciona:
             </p>
 
             <div className="space-y-3">
-              {/* On-Premise Status */}
+              {/* Sistema Instalado na Loja Status */}
               <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-start justify-between gap-4">
                 <div>
                   <div className="flex items-center gap-2">
                     <Server className="w-4 h-4 text-emerald-400" />
-                    <h4 className="text-sm font-bold text-white">Servidor On-Premise (No Local)</h4>
+                    <h4 className="text-sm font-bold text-white">Sistema Instalado na Loja</h4>
                   </div>
                   <p className="text-xs text-slate-400 mt-1">
                     {internetDownSim
-                      ? 'Caixas do mercado, impressoras de comanda e catracas da academia continuam funcionando a 100% na rede interna!'
-                      : 'Operando na rede local (< 1ms) e fazendo backup automático na nuvem em segundo plano.'}
+                      ? 'Caixas da padaria/mercado, impressoras da cozinha e catracas da academia continuam funcionando 100% normal!'
+                      : 'Funcionando direto nos equipamentos da loja e salvando cópia de segurança automática.'}
                   </p>
                 </div>
                 <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 shrink-0">
-                  100% OPERANTE
+                  100% NORMAL
                 </span>
               </div>
 
-              {/* Cloud Status */}
+              {/* Sistema pela Internet Status */}
               <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-start justify-between gap-4">
                 <div>
                   <div className="flex items-center gap-2">
                     <Cloud className="w-4 h-4 text-indigo-400" />
-                    <h4 className="text-sm font-bold text-white">Sistema Cloud (Na Nuvem)</h4>
+                    <h4 className="text-sm font-bold text-white">Sistema pela Internet</h4>
                   </div>
                   <p className="text-xs text-slate-400 mt-1">
                     {internetDownSim
-                      ? 'O servidor na nuvem segue 100% seguro! No local, você pode rotear o 4G/5G do celular para continuar usando.'
-                      : 'Sincronizando todas as filiais, estoque, financeiro e acessos remotos em tempo real.'}
+                      ? 'Seus dados continuam salvos e seguros! Na loja, você pode usar o 4G/5G do celular até o Wi-Fi voltar.'
+                      : 'Sincronizando agenda, estoque, financeiro e acesso pelo celular do dono em tempo real.'}
                   </p>
                 </div>
                 <span
@@ -333,23 +330,23 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
                       : 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30'
                   }`}
                 >
-                  {internetDownSim ? 'VIA 4G / MOBILE' : '100% SINCRONIZADO'}
+                  {internetDownSim ? 'PELO 4G DO CELULAR' : '100% ONLINE'}
                 </span>
               </div>
 
-              {/* SPA Status */}
+              {/* Catálogo no Celular Status */}
               <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-start justify-between gap-4">
                 <div>
                   <div className="flex items-center gap-2">
                     <Zap className="w-4 h-4 text-amber-400" />
-                    <h4 className="text-sm font-bold text-white">Catálogo / Agendamento SPA</h4>
+                    <h4 className="text-sm font-bold text-white">Catálogo no Celular</h4>
                   </div>
                   <p className="text-xs text-slate-400 mt-1">
-                    Seus clientes estão na casa deles ou no 5G e continuam vendo seu catálogo, cardápio ou portfólio e enviando pedidos!
+                    Seus clientes continuam abrindo seu catálogo pelo celular deles e enviando pedidos e agendamentos!
                   </p>
                 </div>
                 <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 shrink-0">
-                  SEMPRE ONLINE
+                  SEMPRE NO AR
                 </span>
               </div>
             </div>
@@ -360,9 +357,9 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
         <div className="glass-card rounded-2xl overflow-hidden border border-slate-800">
           <div className="px-6 py-5 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4 bg-slate-900/60">
             <div>
-              <h3 className="text-lg font-bold text-white">Tabela Comparativa Rápida</h3>
+              <h3 className="text-lg font-bold text-white">Resumo: Qual a Diferença Entre os 3?</h3>
               <p className="text-xs text-slate-400">
-                Compare lado a lado o que cada modelo entrega para o seu negócio
+                Compare lado a lado o que cada opção faz pelo seu negócio
               </p>
             </div>
             <button
@@ -370,7 +367,7 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
               onClick={() => onSelectArchForQuote(activeArchObj.name)}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition"
             >
-              <span>Tirar dúvida com Engenheiro no WhatsApp</span>
+              <span>Tirar dúvida no WhatsApp</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -379,10 +376,10 @@ export default function ArchitectureExplainer({ onSelectArchForQuote }) {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b border-slate-800 text-xs uppercase tracking-wider text-slate-400 bg-slate-950/60">
-                  <th className="py-4 px-6 font-semibold">Critério</th>
-                  <th className="py-4 px-6 font-semibold text-amber-400">⚡ SPA (Aplicação Rápida)</th>
-                  <th className="py-4 px-6 font-semibold text-indigo-400">☁️ Sistema Cloud (Nuvem)</th>
-                  <th className="py-4 px-6 font-semibold text-emerald-400">🖥️ On-Premise (Servidor Local)</th>
+                  <th className="py-4 px-6 font-semibold">O que comparar</th>
+                  <th className="py-4 px-6 font-semibold text-amber-400">📱 Catálogo no Celular</th>
+                  <th className="py-4 px-6 font-semibold text-indigo-400">🌐 Sistema pela Internet</th>
+                  <th className="py-4 px-6 font-semibold text-emerald-400">🏪 Sistema Instalado na Loja</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/70 text-sm">

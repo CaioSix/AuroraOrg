@@ -1,86 +1,86 @@
 export const BRAND_INFO = {
   name: 'Aurora',
-  tagline: 'Engenharia de Software & Infraestrutura Sob Medida'
+  tagline: 'Sistemas & Soluções Digitais Sob Medida para o Seu Negócio'
 };
 
 export const ARCHITECTURES = [
   {
     id: 'spa',
     badge: 'Rápido, Moderno & Econômico',
-    name: 'SPA (Single Page Application)',
-    shortTitle: 'Aplicação de Página Única',
+    name: 'Catálogo no Celular',
+    shortTitle: 'Vitrine, Preços & Agendamento Rápido',
     iconName: 'Zap',
     color: 'from-amber-400 to-orange-500',
     borderAccent: 'border-amber-500/30',
     badgeBg: 'bg-amber-500/10 text-amber-300 border-amber-500/20',
     whatIsItSimple:
-      'Sabe quando você abre um site antigo e, a cada clique, a tela fica branca e demora segundos para carregar outra página? Uma SPA (Single Page Application) elimina isso. O site inteiro carrega de uma só vez e funciona com a fluidez de um aplicativo de celular instalado, direto no navegador — sem precisar baixar nada na App Store ou Google Play.',
+      'Sabe quando você abre um site antigo e, a cada clique, a tela fica branca e demora para carregar? Nosso Catálogo no Celular elimina isso. Ele abre em menos de 1 segundo e funciona com a fluidez de um aplicativo direto no navegador do cliente — sem ninguém precisar baixar nada na loja de aplicativos.',
     analogy:
-      'É como ter um cardápio ou catálogo digital interativo na mão: você filtra produtos, calcula orçamentos e agenda horários instantaneamente, sem esperar o garçom ir e voltar da cozinha a cada pergunta.',
+      'É como entregar um cardápio ou vitrine interativa na mão do seu cliente: ele vê fotos, filtra serviços, calcula valores e já envia o pedido ou agendamento pronto para o seu WhatsApp.',
     whenToChoose: [
-      'Você quer presença profissional imediata com velocidade absurda no celular.',
-      'Ideal para vitrines interativas, portfólios com filtro, calculadoras de orçamento, cardápios digitais e agendamento direto via WhatsApp.',
-      'Baixíssimo custo de manutenção mensal (pode rodar até sem custos de servidores complexos).'
+      'Você quer uma página profissional e bonita para colocar na bio do Instagram e enviar no WhatsApp.',
+      'Ideal para apresentar seus serviços, portfólio de fotos, tabela de preços, cardápio e receber agendamentos rápidos.',
+      'Baixíssimo custo de manutenção mensal e entrega em poucos dias.'
     ],
     techHighlights: [
-      'Carregamento instantâneo (< 1 segundo)',
-      'Funciona perfeitamente no 4G/5G dos seus clientes',
-      'Pode ser instalado na tela inicial do celular (PWA)',
-      'Zero dor de cabeça com servidores ou manutenção pesada'
+      'Abre instantaneamente (< 1 segundo) no celular do cliente',
+      'Não precisa baixar aplicativo (abre direto pelo link ou QR Code)',
+      'Botões de agendamento e pedido direto no seu WhatsApp',
+      'Zero dor de cabeça com manutenção'
     ],
-    idealFor: 'Autônomos, Estúdios de Tattoo, Barbearias Boutique, Cardápios Digitais e Lançamentos.'
+    idealFor: 'Barbearias, Estúdios de Tatuagem, Padarias, Clínicas de Estética e Profissionais Liberais.'
   },
   {
     id: 'cloud',
-    badge: 'Escala Global & Acesso de Qualquer Lugar',
-    name: 'Sistema Completo em Cloud (Nuvem)',
-    shortTitle: 'Plataforma Web & Banco na Nuvem',
+    badge: 'Acesso de Qualquer Lugar',
+    name: 'Sistema pela Internet',
+    shortTitle: 'Gestão Completa Online no Celular ou PC',
     iconName: 'Cloud',
     color: 'from-indigo-400 to-cyan-400',
     borderAccent: 'border-indigo-500/30',
     badgeBg: 'bg-indigo-500/10 text-indigo-300 border-indigo-500/20',
     whatIsItSimple:
-      'Um sistema completo com banco de dados, painel administrativo, controle financeiro, logins de funcionários e relatórios que fica hospedado em servidores seguros na Nuvem (como Amazon AWS ou Google Cloud). Você acompanha o faturamento da sua empresa pelo celular na praia ou em casa, em tempo real.',
+      'Um sistema completo com controle financeiro, agenda da equipe, cadastro de clientes, estoque e relatórios que funciona direto pela internet. Você acompanha tudo o que está acontecendo na sua empresa pelo seu celular, seja em casa, em viagem ou na loja.',
     analogy:
-      'Funciona como o seu Internet Banking ou Netflix: você não precisa ter um servidor barulhento na sua loja. Basta abrir o navegador ou app, fazer login com segurança e toda a operação da empresa está sincronizada.',
+      'Funciona como o aplicativo do seu banco: você não precisa comprar nenhum computador caro para guardar os dados. Basta fazer login com sua senha de qualquer aparelho e todas as informações estão salvas e seguras.',
     whenToChoose: [
-      'Você tem mais de um funcionário, sócios ou múltiplas unidades que precisam acessar os mesmos dados ao mesmo tempo.',
-      'Você quer acompanhar estoque, comissões, vendas e agendamentos de fora do estabelecimento.',
-      'Você quer backups diários automáticos e monitoramento 24/7 feito por especialistas SRE.'
+      'Você tem mais de um funcionário, sócios ou mais de uma unidade que precisam usar o sistema ao mesmo tempo.',
+      'Você quer acompanhar o caixa, comissões, estoque e agendamentos mesmo quando não está presente na loja.',
+      'Você quer cópias de segurança (backups) automáticas todos os dias sem precisar se preocupar.'
     ],
     techHighlights: [
-      'Backups automáticos criptografados todos os dias',
+      'Cópias de segurança automáticas todos os dias',
       'Acesso simultâneo pelo celular, tablet ou computador',
-      'Alta disponibilidade (SLA 99.9%) monitorada por SRE',
+      'Controle de login e permissões para cada funcionário',
       'Cresce junto com o seu negócio sem precisar trocar de computador'
     ],
-    idealFor: 'Redes de Barbearias, Clínicas, Academias em expansão, Mercados com gestão remota e Franquias.'
+    idealFor: 'Barbearias com Equipe, Clínicas, Academias, Estúdios e Lojas com Gestão a Distância.'
   },
   {
     id: 'onpremise',
-    badge: 'Controle Total & Funciona Mesmo Sem Internet',
-    name: 'On-Premise (Servidor Local / Híbrido)',
-    shortTitle: 'Infraestrutura Própria no Local',
+    badge: 'Funciona Mesmo Sem Internet',
+    name: 'Sistema Instalado na Loja',
+    shortTitle: 'Estrutura Própria que Nunca Para',
     iconName: 'Server',
     color: 'from-emerald-400 to-teal-500',
     borderAccent: 'border-emerald-500/30',
     badgeBg: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20',
     whatIsItSimple:
-      '"On-Premise" significa que o sistema e o banco de dados ficam instalados fisicamente dentro da sua empresa (em um servidor local ou mini-PC dedicado). A grande vantagem? Se um caminhão romper o cabo de fibra óptica da sua rua e a internet cair o dia inteiro, seus caixas, catracas e computadores locais continuam funcionando a 100% da velocidade.',
+      'Neste modelo, o sistema fica instalado fisicamente nos computadores dentro do seu estabelecimento. Qual é a grande vantagem? Se um caminhão romper o fio na rua e a internet do bairro cair o dia inteiro, seus caixas, impressoras e catracas continuam funcionando a 100% da velocidade.',
     analogy:
-      'É como ter um gerador próprio de energia: enquanto a vizinhança inteira para quando a operadora de internet falha, o seu caixa de supermercado continua passando compras e emitindo cupom sem fila.',
+      'É como ter um gerador próprio de energia: enquanto o comércio vizinho fica parado esperando a operadora de internet voltar, o seu caixa continua passando vendas sem formar fila.',
     whenToChoose: [
-      'Sua operação não pode parar nem por 1 minuto se a internet oscilar (Ex: Frente de caixa de Mercado, Padaria ou Catraca de Academia).',
-      'Você utiliza equipamentos físicos na rede local (leitores ópticos, balanças de precisão, impressoras térmicas em rede, catracas biométricas).',
-      'Você exige soberania total sobre os dados sensíveis dentro do seu próprio prédio (com opção de backup híbrido criptografado na nuvem).'
+      'Sua operação não pode parar nem por 1 minuto se a internet cair (Ex: Caixa de Padaria/Mercado, Cozinha de Restaurante ou Catraca de Academia).',
+      'Você usa equipamentos conectados no local (leitores de código de barras, balanças de peso, impressoras de cupom, catracas digitais).',
+      'Você quer máxima velocidade no balcão e também pode sincronizar os relatórios com o seu celular quando a internet estiver ativa.'
     ],
     techHighlights: [
-      'Operação 100% Offline-First (independe da operadora de internet)',
-      'Latência zero (< 1ms) na rede interna para caixas e catracas',
-      'Integração nativa com balanças, leitores, impressoras e biometria',
-      'Opção Híbrida: roda local e sincroniza relatórios na nuvem quando houver internet'
+      'Funciona 100% normal mesmo se a internet da rua cair',
+      'Resposta instantânea no caixa e na catraca (sem travamentos)',
+      'Conecta direto com balanças, leitores de código, impressoras e biometria',
+      'Sincroniza os relatórios com o celular do dono assim que houver internet'
     ],
-    idealFor: 'Mercados, Atacarejos, Academias com Catraca Local, Indústrias, Clínicas e Operações Críticas.'
+    idealFor: 'Mercados, Padarias, Restaurantes movimentados, Academias com Catraca e Clínicas.'
   }
 ];
 
@@ -91,46 +91,46 @@ export const NICHES = [
     demoUrl: '/demos/barbearia/index.html',
     iconName: 'Scissors',
     tagline: 'Agenda cheia, zero furo de clientes e comissões calculadas no automático.',
-    painPoint: 'Perder tempo respondendo "tem horário hoje?" no WhatsApp ou errar a conta do rateio dos barbeiros no sábado à noite.',
+    painPoint: 'Perder tempo respondendo "tem horário hoje?" no WhatsApp ou errar a conta da comissão dos barbeiros no sábado à noite.',
     imageGradient: 'from-amber-500/20 via-orange-600/10 to-slate-900',
     accentText: 'text-amber-400',
     recommendedTier: 'cloud',
     metrics: [
-      { label: 'Redução de Faltas (No-Show)', value: '-68%' },
+      { label: 'Redução de Faltas', value: '-68%' },
       { label: 'Tempo para Agendar', value: '25 seg' }
     ],
     tiers: {
       spa: {
-        title: 'Vitrine Express + Agendamento Rápido (SPA)',
+        title: 'Catálogo no Celular + Agendamento Rápido',
         demoUrl: '/demos/barbearia/index.html',
-        description: 'Página interativa onde o cliente escolhe o barbeiro, o serviço (corte, barba, combo), vê os horários livres e já envia o agendamento formatado ou confirma na hora.',
+        description: 'Página moderna onde o cliente vê seus cortes, tabela de preços, escolhe o barbeiro de preferência e já solicita o horário direto pelo celular.',
         features: [
-          'Catálogo visual de cortes, serviços e tabela de preços dinâmica',
-          'Seleção de profissional preferido com fotos e especialidades',
-          'Calculadora de combos (Corte + Barba + Sobrancelha)',
-          'Integração em 1 clique com WhatsApp da recepção'
+          'Vitrine elegante com fotos da barbearia, equipe e tabela de preços',
+          'Escolha de serviço (Corte, Barba, Combo VIP) e profissional',
+          'Seleção rápida de horário disponível sem precisar baixar aplicativo',
+          'Integração direta com o WhatsApp da recepção'
         ],
         deliveryTime: '5 a 10 dias úteis'
       },
       cloud: {
-        title: 'Gestão Completa de Barbearia & Clube de Assinatura (Cloud)',
-        description: 'Plataforma completa na nuvem: agenda inteligente por cadeira, lembrete automático antes do horário, clube do assinante (receita recorrente) e divisão automática de comissões.',
+        title: 'Sistema pela Internet (Agenda, Clube & Comissões)',
+        description: 'Sistema completo acessível de qualquer lugar: agenda individual por cadeira, lembrete automático para o cliente não faltar, clube de assinatura mensal e cálculo de comissões.',
         features: [
-          'Agenda multi-barbeiro em tempo real (acesso no celular de cada profissional)',
-          'Clube de Assinatura mensal (cobrança recorrente Pix/Cartão)',
-          'Cálculo automático de comissão (% por serviço e venda de pomadas/bebidas)',
-          'Controle de estoque de insumos e comanda de bar (cerveja, café, produtos)'
+          'Agenda em tempo real no celular de cada barbeiro',
+          'Clube de Assinatura mensal (cobrança recorrente no Pix ou Cartão)',
+          'Cálculo automático de comissão por serviço e venda de produtos/bebidas',
+          'Relatório financeiro diário e mensal no celular do dono'
         ],
         deliveryTime: '15 a 30 dias úteis'
       },
       onpremise: {
-        title: 'Totem de Autoatendimento & Caixa Local (On-Premise / Híbrido)',
-        description: 'Para grandes barbearias com alto fluxo: recepção e frente de caixa rodando na rede local com impressão instantânea de comanda e painel de chamada na TV.',
+        title: 'Sistema Instalado na Loja (Recepção, Comanda & TV)',
+        description: 'Para barbearias de grande porte e alto fluxo: frente de caixa na recepção com impressão instantânea de comanda e painel na TV da sala de espera.',
         features: [
-          'Operação local ultrarrápida na recepção mesmo se o Wi-Fi oscilar',
-          'Integração direta com impressora térmica de comandas e gaveta de dinheiro',
-          'Painel de TV local para fila de espera e mídia indoor',
-          'Sincronização automática com a nuvem para o dono acompanhar de casa'
+          'Recepção e caixa funcionando rápido mesmo se o Wi-Fi oscilar',
+          'Ligação direta com impressora térmica de comandas e gaveta de dinheiro',
+          'Painel de chamada na TV da recepção para organizar a vez',
+          'Envio automático do fechamento de caixa para o celular do proprietário'
         ],
         deliveryTime: '25 a 40 dias úteis'
       }
@@ -141,46 +141,47 @@ export const NICHES = [
     name: 'Estúdio de Tatuagem',
     demoUrl: '/demos/tattoo/index.html',
     iconName: 'Sparkles',
-    tagline: 'Portfólio que converte, orçamento inteligente e ficha de anamnese digital.',
-    painPoint: 'Orçamentos demorados no Direct/WhatsApp sem saber tamanho, local do corpo ou estilo, além de pilhas de papel de termos de responsabilidade.',
+    tagline: 'Portfólio que valoriza sua arte, orçamento rápido e termo de responsabilidade digital.',
+    painPoint: 'Perder horas no WhatsApp tentando descobrir qual o tamanho, local do corpo e estilo que o cliente quer, além de guardar pilhas de fichas de papel.',
     imageGradient: 'from-purple-500/20 via-fuchsia-600/10 to-slate-900',
     accentText: 'text-purple-400',
     recommendedTier: 'spa',
     metrics: [
-      { label: 'Orçamentos Qualificados', value: '+3.2x' },
-      { label: 'Papelada no Estúdio', value: 'Zero' }
+      { label: 'Orçamentos Prontos', value: '+3.2x' },
+      { label: 'Papel no Estúdio', value: 'Zero' }
     ],
     tiers: {
       spa: {
-        title: 'Portfólio Interativo + Simulador de Orçamento (SPA)',
-        description: 'Uma experiência visual incrível para apresentar a arte dos tatuadores. O cliente filtra por estilo (Fine Line, Realismo, Old School, Blackwork) e preenche um assistente visual de orçamento.',
+        title: 'Catálogo no Celular (Portfólio + Simulador de Orçamento)',
+        demoUrl: '/demos/tattoo/index.html',
+        description: 'Apresente os trabalhos dos tatuadores com visual de alto padrão. O cliente vê os estilos, conhece o estúdio e preenche um formulário rápido de orçamento.',
         features: [
-          'Galeria de alta resolução com filtros instantâneos por artista e estilo',
-          'Assistente interativo: cliente escolhe parte do corpo, tamanho em cm, cor e envia referências',
-          'Guia digital interativo de cuidados pós-tatuagem (cicatrização)',
-          'Envio do briefing completo mastigado direto para o WhatsApp do tatuador'
+          'Apresentação dos artistas e estilos (Fine Line, Realismo, Blackwork, Old School)',
+          'Simulador onde o cliente informa estilo, tamanho em cm e local do corpo',
+          'Tabela de referência de sessões e informações de biossegurança',
+          'Envio do pedido de orçamento organizado para o WhatsApp do estúdio'
         ],
         deliveryTime: '7 a 12 dias úteis'
       },
       cloud: {
-        title: 'Sistema de Gestão de Estúdio, Sinal & Anamnese (Cloud)',
-        description: 'Gerencie agendas de múltiplos residentes e convidados (Guest Artists), pagamentos de sinal para reservar sessão, fichas médicas assinadas no tablet e estoque de descartáveis.',
+        title: 'Sistema pela Internet (Agenda de Sessões, Sinal & Fichas)',
+        description: 'Gerencie agendas de tatuadores residentes e convidados, pagamento de sinal para reservar data e ficha de anamnese assinada na tela do tablet ou celular.',
         features: [
-          'Ficha de Anamnese e Termo de Consentimento digital com assinatura na tela do tablet/celular',
+          'Ficha de Anamnese e Termo de Consentimento digital com assinatura na tela',
           'Controle de pagamento de sinal (reserva de horário) e sessões longas',
-          'Gestão de porcentagem do estúdio vs. tatuadores residentes e guests',
-          'Histórico fotográfico da evolução de fechamentos (braço/costas) de cada cliente'
+          'Acerto automático de porcentagem entre estúdio e tatuadores',
+          'Histórico de fotos e evolução de fechamentos de cada cliente'
         ],
         deliveryTime: '20 a 35 dias úteis'
       },
       onpremise: {
-        title: 'Servidor de Mídia Local & Arquivo RAW para Grandes Estúdios (On-Premise)',
-        description: 'Servidor NAS/Local dentro do estúdio para armazenar milhares de projetos no iPad (Procreate), fotos em alta resolução sem depender de upload lento de internet e controle de acesso.',
+        title: 'Sistema Instalado na Loja (Arquivo de Projetos & Estoque Local)',
+        description: 'Estrutura local dentro do estúdio para organizar artes pesadas do iPad, impressão imediata de decalques (stencil) e controle rigoroso de materiais descartáveis.',
         features: [
-          'Rede local de alta velocidade para compartilhar decalques e arquivos do Procreate direto nas impressoras térmicas de stencil',
-          'Cofre local criptografado de termos assinados e documentos de clientes (LGPD)',
-          'Controle de estoque local de agulhas, tintas (lote/validade ANVISA) com leitor de código',
-          'Backup espelhado automático'
+          'Rede interna rápida para enviar desenhos direto para as impressoras térmicas de decalque',
+          'Arquivo seguro local de termos assinados e fotos em alta resolução',
+          'Controle de estoque e validade ANVISA de agulhas, biqueiras e tintas',
+          'Cópia de segurança automática'
         ],
         deliveryTime: '25 a 40 dias úteis'
       }
@@ -191,46 +192,47 @@ export const NICHES = [
     name: 'Padaria, Mercado & Varejo',
     demoUrl: '/demos/padaria/index.html',
     iconName: 'ShoppingCart',
-    tagline: 'Frente de caixa que nunca trava a fila, controle de validade e estoque cirúrgico.',
-    painPoint: 'A internet cai no horário de pico e os caixas param de passar compras, ou mercadorias vencem na prateleira sem ninguém perceber.',
+    tagline: 'Caixa rápido que nunca trava a fila, vitrine de encomendas e controle de estoque.',
+    painPoint: 'A internet cair no horário de pico e o caixa parar de vender, ou perder vendas de encomendas, cestas e fornadas por falta de um cardápio prático.',
     imageGradient: 'from-emerald-500/20 via-teal-600/10 to-slate-900',
     accentText: 'text-emerald-400',
     recommendedTier: 'onpremise',
     metrics: [
-      { label: 'Disponibilidade do Caixa', value: '100% Offline' },
-      { label: 'Tempo por Item no PDV', value: '< 0.2s' }
+      { label: 'Funcionamento do Caixa', value: 'Mesmo Sem Internet' },
+      { label: 'Tempo por Item', value: '< 0.2s' }
     ],
     tiers: {
       spa: {
-        title: 'Encarte Digital de Ofertas & Pedidos Express (SPA)',
-        description: 'Transforme o jornalzinho de ofertas em um catálogo digital rápido no celular do morador do bairro, permitindo montar o carrinho e pedir entrega ou retirada.',
+        title: 'Catálogo no Celular (Cardápio de Fornadas, Cestas & Ofertas)',
+        demoUrl: '/demos/padaria/index.html',
+        description: 'Página apetitosa e rápida para os clientes do bairro verem seus pães, doces, cestas de café da manhã ou ofertas do dia e fazerem encomendas pelo celular.',
         features: [
-          'Jornal de ofertas interativo atualizado em segundos (Dia da Carne, Hortifrúti, Padaria)',
-          'Busca instantânea de produtos e montagem de lista de compras pelo cliente',
-          'Pedido enviado pronto para separação via WhatsApp',
-          'QR Code nas gôndolas para receitas e promoções relâmpago'
+          'Vitrine digital de produtos, fornadas do dia, tábuas de frios e cestas',
+          'Formulário rápido para encomendas com retirada sem fila ou entrega',
+          'Apresentação da história, endereço e horários de funcionamento',
+          'Pedidos enviados prontos para o WhatsApp de atendimento'
         ],
         deliveryTime: '7 a 12 dias úteis'
       },
       cloud: {
-        title: 'ERP Retaguarda em Nuvem & Gestão Multi-Lojas (Cloud)',
-        description: 'Painel gerencial completo na nuvem para controlar compras de fornecedores, entrada de XML de notas fiscais, margem de lucro por produto e curva ABC de vendas.',
+        title: 'Sistema pela Internet (Estoque, Compras & Financeiro)',
+        description: 'Painel gerencial completo pela internet para controlar entrada de notas fiscais de fornecedores, custo de receitas, validade de mercadorias e lucro.',
         features: [
-          'Importação automática de Nota Fiscal (XML) de fornecedores com atualização de custo e preço sugerido',
-          'Alerta inteligente de produtos próximos ao vencimento e estoque mínimo',
-          'Dashboard financeiro em tempo real no celular do proprietário (Fluxo de caixa, DRE)',
-          'Programa de fidelidade/cashback por CPF para clientes do bairro'
+          'Entrada automática de Nota Fiscal de fornecedores atualizando estoque e custos',
+          'Aviso automático de produtos próximos da data de vencimento ou acabando',
+          'Painel financeiro em tempo real no celular do dono (Contas a pagar, vendas do dia)',
+          'Clube de fidelidade/pontos por CPF para clientes da vizinhança'
         ],
         deliveryTime: '25 a 45 dias úteis'
       },
       onpremise: {
-        title: 'PDV de Missão Crítica On-Premise + Servidor Local Híbrido',
-        description: 'O padrão ouro da engenharia SRE para varejo: cada caixa opera com banco local sincronizado ao servidor interno do mercado. Mesmo sem internet no bairro, a venda não para jamais.',
+        title: 'Sistema Instalado na Loja (Frente de Caixa e Balanças)',
+        description: 'O modelo ideal para padarias e mercados: cada caixa funciona direto na rede interna da loja. Mesmo se a internet da rua cair, a venda e o cupom fiscal não param.',
         features: [
-          'Frente de Caixa (PDV) com atalhos de teclado ultrarrápidos e operação 100% independente de internet',
-          'Integração nativa com balanças de checkout/açougue, leitores biópticos e impressoras fiscais (NFC-e/SAT)',
-          'Servidor local no escritório do mercado com redundância (RAID) e no-break monitorado',
-          'Sincronização em segundo plano com a nuvem assim que a conexão estiver ativa'
+          'Frente de Caixa ultrarrápido com atalhos no teclado que funciona mesmo sem internet',
+          'Ligação direta com balanças de peso, leitores de código de barras e impressoras de cupom',
+          'Comanda de balcão (padaria/lanchonete) integrada ao caixa de saída',
+          'Sincroniza todas as vendas com o celular do dono quando a internet estiver conectada'
         ],
         deliveryTime: '30 a 50 dias úteis'
       }
@@ -239,47 +241,48 @@ export const NICHES = [
   {
     id: 'academia',
     name: 'Academia, CrossFit & Studio',
+    demoUrl: '/demos/clinica/index.html',
     iconName: 'Dumbbell',
-    tagline: 'Catraca rápida sem fila, cobrança recorrente automática e app de treino para o aluno.',
-    painPoint: 'Inadimplência alta, alunos esquecendo a ficha de papel ou catraca travando às 18h quando a academia está lotada.',
+    tagline: 'Catraca rápida sem fila, cobrança recorrente automática e treino no celular do aluno.',
+    painPoint: 'Mensalidades atrasadas, alunos perdendo a ficha de papel ou a catraca travando às 18h quando a academia está cheia.',
     imageGradient: 'from-cyan-500/20 via-blue-600/10 to-slate-900',
     accentText: 'text-cyan-400',
     recommendedTier: 'onpremise',
     metrics: [
       { label: 'Liberação na Catraca', value: '0.3 seg' },
-      { label: 'Redução de Inadimplência', value: '-75%' }
+      { label: 'Menos Atrasos', value: '-75%' }
     ],
     tiers: {
       spa: {
-        title: 'Landing Page de Matrícula + Calculadora de Planos (SPA)',
-        description: 'Página de alta conversão onde o futuro aluno conhece a estrutura da academia, vê horários de aulas coletivas, simula planos (mensal, trimestral, anual) e já inicia a matrícula.',
+        title: 'Catálogo no Celular (Planos, Horários de Aulas & Matrícula)',
+        description: 'Página moderna onde o futuro aluno conhece a estrutura da academia, consulta os horários das aulas coletivas, compara os planos e agenda uma aula experimental.',
         features: [
-          'Comparador interativo de planos e modalidades (Musculação, CrossFit, Lutas, Pilates)',
-          'Grade de horários ao vivo filtrável por dia da semana e modalidade',
-          'Calculadora de IMC / TMB para engajar visitantes',
-          'Agendamento rápido de Aula Experimental gratuita'
+          'Comparativo claro de planos (Mensal, Trimestral, Anual) e modalidades',
+          'Quadro de horários de aulas filtrável por dia da semana',
+          'Galeria de fotos dos equipamentos e professores',
+          'Agendamento em 1 clique de Aula Experimental gratuita'
         ],
         deliveryTime: '7 a 10 dias úteis'
       },
       cloud: {
-        title: 'Web App do Aluno (Ficha de Treino) + Cobrança Recorrente (Cloud)',
-        description: 'Substitua as fichas de papel por um Web App moderno no celular do aluno com vídeos dos exercícios, cronômetro de descanso e cobrança automática que não ocupa o limite do cartão.',
+        title: 'Sistema pela Internet (Treino no Celular + Cobrança Recorrente)',
+        description: 'Substitua as fichas de papel por um sistema no celular do aluno com vídeos dos exercícios e cobrança automática mensal no cartão ou Pix.',
         features: [
-          'App de treino no celular do aluno com GIFs/vídeos demonstrativos e evolução de cargas',
-          'Cobrança recorrente automática (Cartão e Pix Automático) integrada ao status de matrícula',
-          'Módulo de Avaliação Física com gráficos de evolução de percentual de gordura e medidas',
-          'Check-in de aulas com vagas limitadas (Spinning, CrossFit, Funcional)'
+          'Ficha de treino digital no celular do aluno com vídeos demonstrativos dos aparelhos',
+          'Cobrança recorrente automática integrada à situação da matrícula',
+          'Ficha de Avaliação Física com gráficos de evolução de peso e medidas',
+          'Reserva de vaga em aulas com limite de alunos (Spinning, CrossFit, Pilates)'
         ],
         deliveryTime: '20 a 35 dias úteis'
       },
       onpremise: {
-        title: 'Controle de Acesso Local (Catracas/Facial) + Sistema Híbrido (On-Premise)',
-        description: 'Comunicação direta em rede local com catracas biométricas ou reconhecimento facial. Mesmo sem internet, a catraca valida alunos ativos em milissegundos.',
+        title: 'Sistema Instalado na Loja (Ligado na Catraca / Reconhecimento Facial)',
+        description: 'Comunicação direta com as catracas biométricas ou faciais na entrada da academia. Mesmo se a internet cair, a catraca libera os alunos em dia instantaneamente.',
         features: [
-          'Servidor local integrado às catracas e leitores faciais/biométricos (zero atraso no horário de pico)',
-          'Bloqueio automático e discreto de matrículas vencidas com aviso na recepção',
-          'Funcionamento contínuo offline: entradas e saídas ficam salvas localmente',
-          'Sincronização híbrida com o App de treinos e painel financeiro na nuvem'
+          'Ligado direto nas catracas e leitores faciais/digitais (sem fila no horário de pico)',
+          'Bloqueio automático de matrículas vencidas com aviso discreto na recepção',
+          'Continua liberando alunos normalmente mesmo quando a internet oscila',
+          'Sincronizado com o sistema financeiro e o treino do aluno'
         ],
         deliveryTime: '25 a 45 dias úteis'
       }
@@ -290,46 +293,47 @@ export const NICHES = [
     name: 'Clínica, Estética & Odonto',
     demoUrl: '/demos/clinica/index.html',
     iconName: 'HeartPulse',
-    tagline: 'Prontuário seguro, controle de pacotes de sessões e confirmação automática.',
-    painPoint: 'Pacientes que esquecem da consulta deixando buracos na agenda e dificuldade para controlar quantas sessões de um pacote estético já foram realizadas.',
+    tagline: 'Apresentação de alto padrão, prontuário seguro e controle de pacotes de sessões.',
+    painPoint: 'Pacientes que esquecem da consulta deixando buracos na agenda e dificuldade para controlar quantas sessões de um pacote estético já foram feitas.',
     imageGradient: 'from-rose-500/20 via-pink-600/10 to-slate-900',
     accentText: 'text-rose-400',
     recommendedTier: 'cloud',
     metrics: [
-      { label: 'Confirmação de Agenda', value: '+89%' },
-      { label: 'Segurança de Dados', value: 'Padrão LGPD' }
+      { label: 'Presença nas Consultas', value: '+89%' },
+      { label: 'Privacidade de Dados', value: 'Total LGPD' }
     ],
     tiers: {
       spa: {
-        title: 'Catálogo de Procedimentos & Agendamento de Avaliação (SPA)',
-        description: 'Apresente seus procedimentos estéticos ou especialidades clínicas com elegância, explicando benefícios, duração e facilitando o agendamento da avaliação.',
+        title: 'Catálogo no Celular (Protocolos, Especialistas & Avaliação)',
+        demoUrl: '/demos/clinica/index.html',
+        description: 'Apresente seus procedimentos estéticos ou odontológicos com sofisticação, explicando os benefícios de cada protocolo e facilitando o agendamento da avaliação.',
         features: [
-          'Guia interativo de tratamentos (Harmonização, Laser, Odonto, Fisioterapia)',
-          'Filtro por objetivo do paciente (Rejuvenescimento, Dores, Sorriso, Bem-estar)',
-          'FAQ interativo que tira dúvidas comuns antes da consulta',
-          'Triagem rápida enviada diretamente para a secretária no WhatsApp'
+          'Catálogo elegante de tratamentos (Harmonização, Laser, Bioestimuladores, Odonto)',
+          'Apresentação do corpo clínico e estrutura das salas de atendimento',
+          'Tabela transparente de protocolos e pacotes',
+          'Solicitação rápida de consulta de avaliação direto pelo celular'
         ],
         deliveryTime: '7 a 12 dias úteis'
       },
       cloud: {
-        title: 'Prontuário Eletrônico, Agenda Médica & Controle de Pacotes (Cloud)',
-        description: 'Sistema completo em nuvem com criptografia de ponta a ponta: agenda multi-profissional, controle de pacotes (ex: 10 sessões de laser) e financeiro completo.',
+        title: 'Sistema pela Internet (Prontuário, Agenda & Controle de Sessões)',
+        description: 'Sistema completo pela internet com alta segurança: agenda de todas as doutoras/profissionais, controle de pacotes (ex: 10 sessões) e financeiro completo.',
         features: [
-          'Prontuário eletrônico personalizável com anexo de fotos (Antes e Depois seguro)',
-          'Controle automático de saldo de sessões contratadas pelo paciente',
-          'Disparo automático de confirmação de consulta 24h antes',
-          'Repasse médico/profissional automatizado e emissão de recibos'
+          'Prontuário digital seguro com histórico de evolução e fotos de Antes e Depois',
+          'Controle automático de quantas sessões do pacote o paciente já realizou',
+          'Lembrete automático de consulta 24h antes no WhatsApp do paciente',
+          'Cálculo automático de repasse para profissionais parceiros'
         ],
         deliveryTime: '20 a 40 dias úteis'
       },
       onpremise: {
-        title: 'Servidor Clínico Privado On-Premise (Máxima Privacidade & Imagens)',
-        description: 'Para clínicas médicas e radiológicas que exigem que todos os laudos, exames de imagem pesados e prontuários fiquem armazenados exclusivamente dentro da clínica.',
+        title: 'Sistema Instalado na Clínica (Privacidade Máxima & Exames)',
+        description: 'Para clínicas médicas e odontológicas que preferem manter todos os prontuários, exames de imagem pesados e escaneamentos 3D salvos dentro da própria clínica.',
         features: [
-          'Banco de dados isolado fisicamente na rede interna da clínica (conformidade rigorosa LGPD)',
-          'Armazenamento ultrarrápido para exames de alta resolução, escaneamentos 3D e fotos clínicas',
-          'Acesso restrito por certificados de segurança na rede local ou VPN dedicada',
-          'Rotina de backup criptografado em cofre local e nuvem privada'
+          'Banco de dados guardado dentro da própria clínica com máxima privacidade',
+          'Abertura instantânea de exames pesados, radiografias e fotos de alta resolução',
+          'Funciona em todos os consultórios e recepção mesmo sem internet externa',
+          'Cópia de segurança criptografada automática'
         ],
         deliveryTime: '30 a 50 dias úteis'
       }
@@ -340,8 +344,8 @@ export const NICHES = [
     name: 'Restaurante, Burger & Delivery',
     demoUrl: 'https://nopreparo.duckdns.org/',
     iconName: 'Utensils',
-    tagline: 'Cardápio próprio sem taxas abusivas, comandas de mesa e tela na cozinha (KDS).',
-    painPoint: 'Pagar até 27% de taxa em aplicativos de terceiros para clientes que já conhecem a sua marca, ou pedidos se perdendo entre o garçom e a cozinha.',
+    tagline: 'Cardápio próprio sem taxas de aplicativos, comandas de mesa e tela na cozinha.',
+    painPoint: 'Pagar até 27% de comissão em aplicativos de entrega para clientes que já são seus, ou pedidos se perdendo entre o garçom e a cozinha.',
     imageGradient: 'from-orange-500/20 via-red-600/10 to-slate-900',
     accentText: 'text-orange-400',
     recommendedTier: 'onpremise',
@@ -351,35 +355,38 @@ export const NICHES = [
     ],
     tiers: {
       spa: {
-        title: 'Cardápio Digital Próprio & Pedido Direto (SPA)',
-        description: 'Seu próprio aplicativo web de pedidos: o cliente abre o link no Instagram ou lê o QR Code na mesa, monta o lanche com adicionais, calcula o frete por bairro e envia o pedido pronto.',
+        title: 'Catálogo no Celular (Cardápio Digital & Pedido Direto)',
+        demoUrl: 'https://nopreparo.duckdns.org/',
+        description: 'Seu próprio cardápio digital interativo: o cliente abre pelo link do Instagram ou QR Code na mesa, escolhe o prato, adicionais e envia o pedido pronto.',
         features: [
-          'Montagem inteligente (ponto da carne, adicionais, remover cebola, meio-a-meio para pizzas)',
-          'Cálculo automático de taxa de entrega e cupom de desconto para clientes fiéis',
-          'Zero mensalidade por pedido (100% do lucro fica com você)',
-          'Modo QR Code de Mesa (cliente pede direto da mesa sem esperar garçom)'
+          'Montagem fácil do pedido (ponto da carne, adicionais, observações e bebidas)',
+          'Cálculo automático de taxa de entrega por bairro',
+          'Zero comissão sobre suas vendas (100% do valor fica com o seu restaurante)',
+          'Funciona tanto para Delivery quanto para QR Code nas mesas do salão'
         ],
         deliveryTime: '7 a 12 dias úteis'
       },
       cloud: {
-        title: 'Plataforma de Delivery Próprio, Fidelidade & Gestão (Cloud)',
-        description: 'Painel gestor de pedidos em tempo real com atualização de status para o cliente ("Em preparo", "Saiu para entrega"), pagamento online e ficha técnica de custos.',
+        title: 'Sistema pela Internet (Painel de Pedidos, Estoque & Fidelidade)',
+        demoUrl: 'https://nopreparo.duckdns.org/',
+        description: 'Painel completo pela internet para organizar todos os pedidos que chegam, avisar o cliente quando saiu para entrega e controlar o estoque de ingredientes.',
         features: [
-          'Gestor de pedidos kanban (Recebido -> Na Cozinha -> Na Bag -> Entregue)',
-          'Ficha técnica de pratos: baixa automática de ingredientes (pão, blend, queijo) a cada venda',
-          'Programa de fidelidade automatizado ("Compre 10 e ganhe 1")',
-          'Relatório de pratos mais lucrativos e horários de pico'
+          'Quadro visual de pedidos (Recebido -> No Preparo -> Saiu para Entrega)',
+          'Baixa automática de ingredientes do estoque a cada prato vendido',
+          'Programa de fidelidade próprio para fazer o cliente pedir toda semana',
+          'Relatório de pratos mais vendidos e lucro real no celular do dono'
         ],
         deliveryTime: '20 a 35 dias úteis'
       },
       onpremise: {
-        title: 'PDV Salão, Comanda Mobile & KDS na Cozinha em Rede Local (On-Premise)',
-        description: 'Os celulares dos garçons se comunicam direto via Wi-Fi local com as impressoras da cozinha/bar e com o monitor KDS, sem depender de internet externa na hora do movimento.',
+        title: 'Sistema Instalado no Restaurante (Garçom, Caixa & Tela na Cozinha)',
+        demoUrl: 'https://nopreparo.duckdns.org/',
+        description: 'Os celulares dos garçons enviam o pedido direto pelo Wi-Fi interno para a tela ou impressora da cozinha e do bar, funcionando rápido mesmo se a internet cair.',
         features: [
-          'Comanda eletrônica para garçons operando em rede local de altíssima velocidade',
-          'KDS (Kitchen Display System): monitor na cozinha com alerta sonoro e tempo de preparo de cada mesa',
-          'Divisão inteligente de conta na mesa (por pessoa ou por item consumido)',
-          'Impressão instantânea setorizada (bebidas saem no bar, pratos saem na cozinha)'
+          'Comanda digital no celular do garçom ligada direto na cozinha e no bar',
+          'Tela de Preparo na Cozinha com alerta sonoro e tempo de espera de cada mesa',
+          'Fechamento e divisão de conta na mesa (por pessoa ou por item consumido)',
+          'Impressão automática setorizada (bebidas saem no bar, pratos saem na cozinha)'
         ],
         deliveryTime: '25 a 45 dias úteis'
       }
@@ -390,79 +397,79 @@ export const NICHES = [
 export const QUIZ_QUESTIONS = [
   {
     id: 'niche',
-    question: '1. Qual é o segmento principal do seu negócio?',
-    subtitle: 'Isso nos ajuda a selecionar os módulos específicos da sua área.',
+    question: '1. Qual é o ramo do seu negócio?',
+    subtitle: 'Assim mostramos a solução já pensada para o seu dia a dia.',
     options: [
       { value: 'barbearia', label: 'Barbearia ou Salão de Beleza', icon: 'Scissors' },
       { value: 'tattoo', label: 'Estúdio de Tatuagem / Piercing', icon: 'Sparkles' },
-      { value: 'mercado', label: 'Mercado, Padaria ou Loja de Varejo', icon: 'ShoppingCart' },
-      { value: 'academia', label: 'Academia, CrossFit ou Studio Fitness', icon: 'Dumbbell' },
-      { value: 'clinica', label: 'Clínica Médica, Odonto ou Estética', icon: 'HeartPulse' },
+      { value: 'mercado', label: 'Padaria, Mercado ou Loja', icon: 'ShoppingCart' },
+      { value: 'academia', label: 'Academia, CrossFit ou Studio', icon: 'Dumbbell' },
+      { value: 'clinica', label: 'Clínica de Estética, Médica ou Odonto', icon: 'HeartPulse' },
       { value: 'restaurante', label: 'Restaurante, Hamburgueria ou Delivery', icon: 'Utensils' }
     ]
   },
   {
     id: 'internetDependency',
-    question: '2. O que acontece hoje se a internet do seu estabelecimento cair por 2 horas?',
-    subtitle: 'Como engenheiros SRE, desenhamos a arquitetura para proteger o seu faturamento.',
+    question: '2. O que acontece hoje se a internet da sua rua cair por 2 horas?',
+    subtitle: 'Isso define se o sistema deve ficar na internet ou instalado dentro da loja.',
     options: [
       {
         value: 'critical',
-        label: 'Caos total! Formam-se filas no caixa/catraca e perco vendas na hora.',
+        label: 'Para tudo! Forma fila no caixa/catraca e perco vendas na hora.',
         points: { onpremise: 4, cloud: 1, spa: 0 }
       },
       {
         value: 'moderate',
-        label: 'Atrapalha bastante, mas consigo atender pelo 4G do celular.',
+        label: 'Atrapalha um pouco, mas consigo atender usando o 4G/5G do celular.',
         points: { cloud: 3, onpremise: 1, spa: 1 }
       },
       {
         value: 'low',
-        label: 'Meus clientes agendam ou fazem pedidos pelo próprio celular deles.',
+        label: 'Sem problemas, meus clientes olham o catálogo e agendam pelo próprio celular deles.',
         points: { spa: 3, cloud: 2, onpremise: 0 }
       }
     ]
   },
   {
     id: 'hardware',
-    question: '3. Você precisa conectar equipamentos físicos no local?',
-    subtitle: 'Ex: Leitores de código de barras, balanças, catracas biométricas ou múltiplas impressoras.',
+    question: '3. Você usa equipamentos conectados no balcão ou entrada?',
+    subtitle: 'Ex: Balanças de peso, leitores de código de barras, catracas ou várias impressoras.',
     options: [
       {
         value: 'heavy_hardware',
-        label: 'Sim! Uso catracas, balanças, leitores ópticos ou várias impressoras em rede.',
+        label: 'Sim! Uso catracas, balanças, leitores de código ou impressoras de cozinha/caixa.',
         points: { onpremise: 4, cloud: 1, spa: 0 }
       },
       {
         value: 'light_hardware',
-        label: 'Apenas celulares, notebooks, tablets ou 1 impressora simples.',
+        label: 'Apenas celulares, notebooks, tablets ou 1 impressora comum.',
         points: { cloud: 3, spa: 2, onpremise: 0 }
       },
       {
         value: 'no_hardware',
-        label: 'Não, quero tudo 100% digital no celular e computador.',
+        label: 'Não, quero tudo simples direto no celular e computador.',
         points: { spa: 3, cloud: 3, onpremise: 0 }
       }
     ]
   },
   {
     id: 'goal',
-    question: '4. Qual é a sua maior prioridade neste momento?',
-    subtitle: 'Você pode começar enxuto e evoluir sua arquitetura depois!',
+    question: '4. Qual é o seu maior objetivo neste momento?',
+    subtitle: 'Você pode começar pelo mais simples hoje e expandir quando quiser!',
     options: [
       {
         value: 'fast_showcase',
-        label: 'Ter uma vitrine/catálogo rápido, moderno e barato para atrair e atender clientes já.',
+        label: 'Ter um Catálogo no Celular bonito, rápido e acessível para atrair mais clientes já.',
         points: { spa: 5, cloud: 1, onpremise: 0 }
       },
       {
         value: 'remote_management',
-        label: 'Controlar agenda, estoque, financeiro e equipe de qualquer lugar (pelo celular).',
+        label: 'Controlar agenda, estoque, financeiro e equipe de qualquer lugar pela internet.',
         points: { cloud: 5, onpremise: 1, spa: 0 }
       },
       {
         value: 'mission_critical',
-        label: 'Blindar minha operação física com servidor local próprio, velocidade máxima e zero quedas.',
+        label: 'Ter um Sistema Instalado na Loja super rápido que nunca para nem sem internet.',
         points: { onpremise: 5, cloud: 1, spa: 0 }
       }
     ]
@@ -471,33 +478,33 @@ export const QUIZ_QUESTIONS = [
 
 export const COMPARISON_ROWS = [
   {
-    criterion: 'Como funciona para o usuário?',
-    spa: 'Abre instantaneamente no navegador como um app leve, sem recarregar telas.',
-    cloud: 'Sistema completo acessível por login de qualquer computador ou celular com internet.',
-    onpremise: 'Instalado em servidor dentro da empresa; computadores locais acessam via cabo/Wi-Fi interno.'
+    criterion: 'Como funciona no dia a dia?',
+    spa: 'Seu cliente abre o link no celular, vê seus serviços/preços e agenda ou pede em segundos.',
+    cloud: 'Você e sua equipe acessam o sistema completo por senha no celular ou computador.',
+    onpremise: 'Fica instalado nos computadores da sua loja para máxima velocidade no balcão.'
   },
   {
     criterion: 'E se a internet da rua cair?',
-    spa: 'O cliente acessa normalmente pelo 4G/5G do celular dele.',
-    cloud: 'Você acessa pelo 4G do celular; computadores sem internet aguardam a volta do sinal.',
-    onpremise: 'Continua funcionando 100% normal! Caixas, catracas e rede interna não dependem da rua.'
+    spa: 'Seu cliente continua acessando normalmente pelo 4G/5G do celular dele.',
+    cloud: 'Você acessa pelo 4G do celular; computadores aguardam o sinal voltar.',
+    onpremise: 'Continua funcionando 100% normal! Caixas, comandas e catracas não param nunca.'
   },
   {
-    criterion: 'Onde ficam salvos os dados?',
-    spa: 'Interações leves no próprio aparelho ou envio direto para o seu WhatsApp.',
-    cloud: 'Data Centers de alta segurança (AWS / Google Cloud) com backups diários automáticos.',
-    onpremise: 'Fisicamente dentro da sua empresa (com opção de cópia de segurança criptografada na nuvem).'
+    criterion: 'Onde ficam guardadas as informações?',
+    spa: 'Os pedidos e agendamentos chegam direto no seu WhatsApp.',
+    cloud: 'Salvos na internet com cópias de segurança automáticas todos os dias.',
+    onpremise: 'Guardados dentro da sua própria empresa (com cópia de segurança extra online).'
   },
   {
-    criterion: 'Integração com Catracas, Balanças e Caixas',
-    spa: 'Não aplicável (foco em experiência digital do cliente).',
-    cloud: 'Básica (impressão via navegador).',
-    onpremise: 'Nativa e em tempo real (< 1ms) com qualquer equipamento na rede local.'
+    criterion: 'Ligação com Catracas, Balanças e Caixas',
+    spa: 'Focado na tela do celular do seu cliente.',
+    cloud: 'Impressão simples pelo computador.',
+    onpremise: 'Conexão direta e instantânea com balanças, leitores de código, impressoras e catracas.'
   },
   {
-    criterion: 'Investimento Inicial & Prazo',
+    criterion: 'Investimento & Prazo de Entrega',
     spa: 'Baixo investimento • Entrega super rápida (5 a 12 dias).',
-    cloud: 'Investimento moderado • Sem gasto com servidor físico (15 a 35 dias).',
-    onpremise: 'Investimento em projeto robusto + mini-servidor local dedicado (25 a 50 dias).'
+    cloud: 'Investimento moderado • Sem precisar comprar computador servidor (15 a 35 dias).',
+    onpremise: 'Projeto completo instalado no local (25 a 50 dias).'
   }
 ];

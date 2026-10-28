@@ -4,9 +4,6 @@ import {
   CheckCircle2,
   RotateCcw,
   MessageCircle,
-  Zap,
-  Cloud,
-  Server,
   ChevronRight,
   Sparkles
 } from 'lucide-react';
@@ -73,16 +70,16 @@ export default function ArchitectureQuiz({ onSendQuizResult }) {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-medium mb-4">
             <Compass className="w-3.5 h-3.5" />
-            <span>Diagnóstico Gratuito em 30 Segundos</span>
+            <span>Descubra em 30 Segundos</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
-            Em Dúvida Sobre Qual Estrutura Escolher?
+            Em Dúvida Sobre Qual Opção Escolher?
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Responda 4 perguntas rápidas sobre a sua rotina e nosso algoritmo de engenharia recomenda se você deve começar com uma{' '}
-            <strong className="text-amber-300">SPA</strong>,{' '}
-            <strong className="text-indigo-300">Cloud</strong> ou{' '}
-            <strong className="text-emerald-300">On-Premise</strong>.
+            Responda 4 perguntas rápidas sobre o seu dia a dia e veja se o melhor para você agora é o{' '}
+            <strong className="text-amber-300">Catálogo no Celular</strong>, o{' '}
+            <strong className="text-indigo-300">Sistema pela Internet</strong> ou o{' '}
+            <strong className="text-emerald-300">Sistema Instalado na Loja</strong>.
           </p>
         </div>
 
@@ -162,10 +159,10 @@ export default function ArchitectureQuiz({ onSendQuizResult }) {
                   <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-800">
                     <div>
                       <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-400 mb-1">
-                        <Sparkles className="w-4 h-4" /> Diagnóstico Concluído pelo Engenheiro SRE
+                        <Sparkles className="w-4 h-4" /> Recomendação Ideal Para o Seu Negócio
                       </span>
                       <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-                        Arquitetura Ideal: {result.archObj.name}
+                        {result.archObj.name}
                       </h3>
                     </div>
 
@@ -182,7 +179,7 @@ export default function ArchitectureQuiz({ onSendQuizResult }) {
                   <div className="my-6 p-6 rounded-2xl bg-slate-950/90 border border-indigo-500/30">
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                       <span className="text-xs font-semibold uppercase tracking-wider text-indigo-400">
-                        Projeto Recomendado para {result.nicheObj.name}:
+                        Solução Recomendada para {result.nicheObj.name}:
                       </span>
                       <span className="text-xs font-mono px-2.5 py-1 rounded bg-slate-900 text-slate-300 border border-slate-800">
                         Entrega: {result.nicheTierSolution.deliveryTime}
@@ -209,13 +206,13 @@ export default function ArchitectureQuiz({ onSendQuizResult }) {
                     </div>
 
                     <div className="p-3.5 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-xs text-indigo-200">
-                      <strong>Por que essa arquitetura?</strong> {result.archObj.whatIsItSimple}
+                      <strong>Por que essa é a melhor opção?</strong> {result.archObj.whatIsItSimple}
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-xs text-slate-400">
-                      Envie este diagnóstico pronto para o nosso WhatsApp e receba um orçamento detalhado sem compromisso.
+                      Envie este resultado para o nosso WhatsApp e receba um orçamento sem compromisso.
                     </p>
                     <button
                       type="button"
@@ -229,7 +226,7 @@ export default function ArchitectureQuiz({ onSendQuizResult }) {
                       className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm inline-flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/25 transition shrink-0"
                     >
                       <MessageCircle className="w-4 h-4" />
-                      <span>Receber Orçamento deste Diagnóstico</span>
+                      <span>Receber Orçamento no WhatsApp</span>
                     </button>
                   </div>
                 </div>

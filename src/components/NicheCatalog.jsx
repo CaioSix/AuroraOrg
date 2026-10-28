@@ -47,7 +47,7 @@ export default function NicheCatalog({ onRequestQuote }) {
   const tierMeta = {
     spa: {
       key: 'spa',
-      badge: 'Entrada Rápida • SPA',
+      badge: 'Rápido & Acessível • Catálogo no Celular',
       icon: <Zap className="w-5 h-5 text-amber-400" />,
       colorClass: 'border-amber-500/30 hover:border-amber-400',
       badgeClass: 'bg-amber-500/10 text-amber-300 border-amber-500/30',
@@ -55,7 +55,7 @@ export default function NicheCatalog({ onRequestQuote }) {
     },
     cloud: {
       key: 'cloud',
-      badge: 'Gestão de Qualquer Lugar • Cloud',
+      badge: 'Gestão de Qualquer Lugar • Sistema pela Internet',
       icon: <Cloud className="w-5 h-5 text-indigo-400" />,
       colorClass: 'border-indigo-500/30 hover:border-indigo-400',
       badgeClass: 'bg-indigo-500/10 text-indigo-300 border-indigo-500/30',
@@ -63,7 +63,7 @@ export default function NicheCatalog({ onRequestQuote }) {
     },
     onpremise: {
       key: 'onpremise',
-      badge: 'Operação Blindada • On-Premise',
+      badge: 'Funciona Sem Internet • Sistema Instalado na Loja',
       icon: <Server className="w-5 h-5 text-emerald-400" />,
       colorClass: 'border-emerald-500/30 hover:border-emerald-400',
       badgeClass: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/30',
@@ -80,7 +80,7 @@ export default function NicheCatalog({ onRequestQuote }) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-medium mb-4">
-            <span>Catálogo Interativo de Soluções por Segmento</span>
+            <span>Catálogo Interativo de Soluções por Ramo</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
             Escolha o Seu Ramo e Veja o Que{' '}
@@ -89,9 +89,9 @@ export default function NicheCatalog({ onRequestQuote }) {
             </span>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Cada negócio tem uma rotina única. Selecione seu setor abaixo para explorar desde uma{' '}
-            <strong className="text-slate-200">SPA enxuta</strong> até um{' '}
-            <strong className="text-slate-200">Sistema Completo Cloud ou On-Premise</strong>.
+            Cada negócio tem uma rotina única. Selecione seu setor abaixo para explorar desde um{' '}
+            <strong className="text-slate-200">Catálogo no Celular</strong> até um{' '}
+            <strong className="text-slate-200">Sistema pela Internet ou Instalado na Loja</strong>.
           </p>
         </div>
 
@@ -163,14 +163,14 @@ export default function NicheCatalog({ onRequestQuote }) {
           {/* Filter by Architecture inside Niche */}
           <div className="mt-6 pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4">
             <span className="text-xs text-slate-400">
-              Filtrar porte da solução para <strong className="text-white">{activeNiche.name}</strong>:
+              Filtrar tipo de solução para <strong className="text-white">{activeNiche.name}</strong>:
             </span>
             <div className="flex flex-wrap gap-2">
               {[
                 { id: 'all', label: 'Ver Todas as 3 Opções' },
-                { id: 'spa', label: '⚡ Apenas SPA' },
-                { id: 'cloud', label: '☁️ Apenas Cloud' },
-                { id: 'onpremise', label: '🖥️ Apenas On-Premise' }
+                { id: 'spa', label: '📱 Catálogo no Celular' },
+                { id: 'cloud', label: '🌐 Sistema pela Internet' },
+                { id: 'onpremise', label: '🏪 Sistema Instalado na Loja' }
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -268,7 +268,7 @@ export default function NicheCatalog({ onRequestQuote }) {
                     className="w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 bg-slate-800/90 hover:bg-slate-700 text-cyan-300 border border-cyan-500/30 transition"
                   >
                     <Eye className="w-4 h-4" />
-                    <span>Ver Página Demo (Catálogo Real)</span>
+                    <span>Ver Exemplo Funcionando</span>
                     <ExternalLink className="w-3.5 h-3.5 opacity-75" />
                   </a>
 
@@ -284,7 +284,7 @@ export default function NicheCatalog({ onRequestQuote }) {
                     className={`w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 transition shadow-lg ${meta.btnClass}`}
                   >
                     <MessageCircle className="w-4 h-4" />
-                    <span>Solicitar Proposta desta Solução</span>
+                    <span>Solicitar Orçamento no WhatsApp</span>
                   </button>
                 </div>
               </div>

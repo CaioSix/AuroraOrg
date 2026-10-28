@@ -34,24 +34,24 @@ export default function App() {
   const handleRequestQuote = ({ nicheName, tierName }) => {
     setQuoteModal({
       title: `${tierName}`,
-      subtitle: `Segmento: ${nicheName}`,
-      defaultMessage: `Olá! Vi no catálogo da ${displayBrandName} a solução "${tierName}" para o segmento de ${nicheName} e gostaria de conversar sobre um orçamento.`
+      subtitle: `Ramo: ${nicheName}`,
+      defaultMessage: `Olá! Vi no catálogo da ${displayBrandName} a solução "${tierName}" para o ramo de ${nicheName} e gostaria de conversar sobre um orçamento.`
     });
   };
 
   const handleSelectArchForQuote = (archName) => {
     setQuoteModal({
-      title: `Consultoria sobre ${archName}`,
-      subtitle: 'Dúvida Técnica / Orçamento',
-      defaultMessage: `Olá! Estava lendo sobre a arquitetura "${archName}" no catálogo da ${displayBrandName} e gostaria de entender como aplicá-la no meu negócio.`
+      title: `Dúvida sobre ${archName}`,
+      subtitle: 'Consultoria Gratuita / Orçamento',
+      defaultMessage: `Olá! Estava vendo a opção "${archName}" no catálogo da ${displayBrandName} e gostaria de saber como funciona para o meu negócio.`
     });
   };
 
   const handleSendQuizResult = ({ nicheName, archName, solutionTitle }) => {
     setQuoteModal({
-      title: `Diagnóstico: ${archName}`,
-      subtitle: `Projeto para ${nicheName} — ${solutionTitle}`,
-      defaultMessage: `Olá! Fiz o diagnóstico no simulador da ${displayBrandName} para meu negócio (${nicheName}). A recomendação foi "${solutionTitle}" (${archName}). Gostaria de receber uma proposta!`
+      title: `Recomendação: ${archName}`,
+      subtitle: `Para ${nicheName} — ${solutionTitle}`,
+      defaultMessage: `Olá! Fiz o teste rápido no site da ${displayBrandName} para meu negócio (${nicheName}). A recomendação foi "${solutionTitle}" (${archName}). Gostaria de receber um orçamento!`
     });
   };
 
@@ -77,7 +77,7 @@ export default function App() {
               <div className="text-lg font-extrabold tracking-tight text-white flex items-center gap-1.5">
                 <span>{displayBrandName}</span>
                 <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
-                  SRE & Dev
+                  Sistemas Sob Medida
                 </span>
               </div>
               <p className="text-[11px] text-slate-400 hidden sm:block">
@@ -88,13 +88,13 @@ export default function App() {
 
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
             <a href="#catalogo" className="hover:text-white transition">
-              Catálogo por Ramo
+              Soluções por Ramo
             </a>
             <a href="#arquiteturas" className="hover:text-white transition">
-              SPA vs. Cloud vs. On-Premise
+              Como Funciona Cada Opção
             </a>
             <a href="#simulador" className="hover:text-white transition">
-              Simulador de Projeto
+              Descobrir Ideal p/ Mim
             </a>
             <a href="#engenharia" className="hover:text-white transition">
               Por Que a {displayBrandName}
@@ -106,13 +106,13 @@ export default function App() {
               type="button"
               onClick={() =>
                 openWhatsAppWithContext(
-                  `Olá! Acessei o catálogo de soluções da ${displayBrandName} e gostaria de falar com um especialista sobre um sistema para o meu negócio.`
+                  `Olá! Acessei o catálogo da ${displayBrandName} e gostaria de conversar sobre uma solução para o meu negócio.`
                 )
               }
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs sm:text-sm font-bold shadow-lg shadow-indigo-600/25 transition"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>Falar com Especialista</span>
+              <span>Falar no WhatsApp</span>
             </button>
           </div>
         </div>
@@ -127,18 +127,18 @@ export default function App() {
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-300 mb-6">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>{displayBrandName} • Soluções para Barbearias, Estúdios de Tattoo, Mercados, Academias e Mais</span>
+              <span>{displayBrandName} • Soluções para Barbearias, Estúdios de Tattoo, Padarias, Clínicas, Restaurantes e Academias</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12] mb-6">
-              Da <span className="text-amber-400">SPA Ultrarrápida</span> ao Sistema Robusto{' '}
+              Do <span className="text-amber-400">Catálogo no Celular</span> ao{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-300 to-emerald-400">
-                Cloud ou On-Premise
+                Sistema Completo Para Sua Loja
               </span>
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-10">
-              Na <strong className="text-white">{displayBrandName}</strong>, desenvolvemos tecnologia sob medida para o tamanho real da sua operação. Seja um aplicativo web instantâneo para seus clientes agendarem pelo celular, um sistema de gestão completo na nuvem ou um servidor dedicado dentro da sua loja que nunca para mesmo sem internet.
+              Na <strong className="text-white">{displayBrandName}</strong>, criamos a tecnologia certa para o momento do seu negócio. Seja uma página rápida para seus clientes verem preços e agendarem pelo celular, um sistema completo pela internet ou um sistema instalado na sua loja que funciona até sem internet.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -146,14 +146,14 @@ export default function App() {
                 href="#catalogo"
                 className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-bold text-base inline-flex items-center justify-center gap-2.5 shadow-xl shadow-indigo-600/25 transition"
               >
-                <span>Explorar Catálogo por Segmento</span>
+                <span>Ver Exemplos do Meu Ramo</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="#arquiteturas"
                 className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-slate-100 font-semibold text-base border border-slate-700 inline-flex items-center justify-center gap-2 transition"
               >
-                <span>Entender SPA, Cloud & On-Premise</span>
+                <span>Entender as 3 Opções</span>
               </a>
             </div>
 
@@ -168,14 +168,14 @@ export default function App() {
                     <Zap className="w-5 h-5" />
                   </span>
                   <span className="text-[11px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-300">
-                    100% Online & Leve
+                    Rápido & Econômico
                   </span>
                 </div>
                 <h3 className="text-base font-bold text-white mb-1">
-                  1. Aplicações SPA (Single Page)
+                  1. Catálogo no Celular
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Sites com velocidade de aplicativo instalado. Perfeito para catálogos, portfólios de tatuagem, cardápios e agendamentos rápidos.
+                  Página bonita e rápida que abre direto no celular do seu cliente sem baixar nada. Ideal para mostrar preços, fotos e receber agendamentos.
                 </p>
               </a>
 
@@ -188,14 +188,14 @@ export default function App() {
                     <Cloud className="w-5 h-5" />
                   </span>
                   <span className="text-[11px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-300">
-                    Gestão em Nuvem
+                    Acesso de Qualquer Lugar
                   </span>
                 </div>
                 <h3 className="text-base font-bold text-white mb-1">
-                  2. Sistemas Completos em Cloud
+                  2. Sistema pela Internet
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Controle financeiro, estoque, comissões e múltiplas unidades de qualquer lugar pelo celular, com backup automático diário.
+                  Controle caixa, estoque, comissões e agenda da equipe pelo seu celular ou computador de onde você estiver, com tudo salvo automaticamente.
                 </p>
               </a>
 
@@ -208,14 +208,14 @@ export default function App() {
                     <Server className="w-5 h-5" />
                   </span>
                   <span className="text-[11px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300">
-                    Servidor no Local
+                    Funciona Sem Internet
                   </span>
                 </div>
                 <h3 className="text-base font-bold text-white mb-1">
-                  3. Soluções Robustas On-Premise
+                  3. Sistema Instalado na Loja
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Servidor próprio na sua empresa. Se a internet da rua cair, seu caixa de mercado ou catraca de academia segue operando sem parar.
+                  Instalado direto nos computadores da sua empresa. Se a internet da rua cair, seu caixa, comanda ou catraca continua funcionando sem parar.
                 </p>
               </a>
             </div>
@@ -226,45 +226,44 @@ export default function App() {
       {/* Interactive Catalog by Niche */}
       <NicheCatalog onRequestQuote={handleRequestQuote} />
 
-      {/* Didactic Explainer: What is SPA, Cloud, On-Premise */}
+      {/* Didactic Explainer */}
       <ArchitectureExplainer onSelectArchForQuote={handleSelectArchForQuote} />
 
       {/* Interactive Quiz / Simulator */}
       <ArchitectureQuiz onSendQuizResult={handleSendQuizResult} />
 
-      {/* SRE & Senior Engineering Authority Section */}
+      {/* Authority Section */}
       <section id="engenharia" className="py-24 border-t border-slate-800/80 bg-slate-950/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-medium mb-4">
                 <ShieldCheck className="w-4 h-4" />
-                <span>Padrão SRE (Site Reliability Engineering)</span>
+                <span>Segurança & Estabilidade</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-5">
-                Por Que Construir com a {displayBrandName} em Vez de Alugar Sistemas Genéricos?
+                Por Que Fazer Seu Sistema com a {displayBrandName}?
               </h2>
               <p className="text-slate-300 text-base leading-relaxed mb-6">
-                Sistemas prontos de prateleira cobram mensalidades eternas por usuário, travam no sábado de movimento e nunca se adaptam ao jeito que você trabalha. A <strong className="text-white">{displayBrandName}</strong> aplica práticas de{' '}
-                <strong className="text-white">Engenharia de Confiabilidade (SRE)</strong> que grandes bancos e gigantes de tecnologia usam, adaptadas para o seu comércio.
+                Sistemas genéricos alugados cobram taxas altas por usuário, são cheios de botões confusos e costumam travar justo no sábado de maior movimento. Na <strong className="text-white">{displayBrandName}</strong>, entregamos uma solução feita para o jeito que você trabalha.
               </p>
 
               <div className="space-y-4">
                 {[
                   {
                     icon: <Activity className="w-5 h-5 text-emerald-400" />,
-                    title: 'Monitoramento Proativo 24/7',
-                    desc: 'Sabemos se um servidor está lento antes mesmo de você perceber, garantindo operação fluida nos horários de pico.'
+                    title: 'Acompanhamento para Nunca Travar',
+                    desc: 'Monitoramos o funcionamento do sistema de perto para garantir que sua operação rode liso nos dias e horários de pico.'
                   },
                   {
                     icon: <Layers className="w-5 h-5 text-indigo-400" />,
-                    title: 'Arquitetura Evolutiva (Comece Pequeno, Cresça Sem Refazer)',
-                    desc: 'Você pode começar com uma SPA acessível hoje e acoplar módulos em Cloud ou On-Premise conforme o faturamento crescer.'
+                    title: 'Comece Pequeno e Cresça no Seu Ritmo',
+                    desc: 'Você pode começar hoje apenas com o Catálogo no Celular e, quando quiser, evoluir para o Sistema Completo sem perder nada.'
                   },
                   {
                     icon: <Lock className="w-5 h-5 text-amber-400" />,
-                    title: 'Backups Imutáveis & Segurança de Dados',
-                    desc: 'Seus cadastros de clientes, histórico financeiro e estoque ficam protegidos com criptografia e cópias automáticas.'
+                    title: 'Seus Dados Sempre Salvos e Protegidos',
+                    desc: 'Seus cadastros de clientes, histórico de vendas e controle financeiro têm cópias de segurança automáticas.'
                   }
                 ].map((item, idx) => (
                   <div
@@ -287,33 +286,33 @@ export default function App() {
             <div className="lg:col-span-6">
               <div className="glass-card rounded-3xl p-6 sm:p-8 border border-slate-800">
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Como Tiramos Seu Sistema do Papel em 4 Passos
+                  Como Entregamos Tudo Pronto em 4 Passos
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-400 mb-6">
-                  Processo transparente, sem surpresas e com entregas semanais que você acompanha pelo celular:
+                  Processo simples, sem complicação e com acompanhamento direto pelo WhatsApp:
                 </p>
 
                 <div className="space-y-5">
                   {[
                     {
                       step: '01',
-                      title: 'Diagnóstico da Sua Operação (Gratuito)',
-                      desc: 'Conversamos por 20 minutos para entender seus gargalos e definir se o melhor custo-benefício é SPA, Cloud ou Servidor Local On-Premise.'
+                      title: 'Conversa Rápida (Sem Compromisso)',
+                      desc: 'Entendemos como funciona o seu negócio hoje e indicamos a opção com melhor custo-benefício.'
                     },
                     {
                       step: '02',
-                      title: 'Protótipo Navegável & Identidade Visual',
-                      desc: 'Criamos a interface personalizada com a sua logo e cores. Você aprova exatamente como as telas vão funcionar antes da programação pesada.'
+                      title: 'Visual com a Sua Marca e Cores',
+                      desc: 'Montamos a tela com a sua logo, suas fotos e seus preços para você aprovar antes da entrega final.'
                     },
                     {
                       step: '03',
-                      title: 'Engenharia, Testes de Carga & Implantação',
-                      desc: 'Desenvolvemos o sistema, configuramos a nuvem ou instalamos o servidor local na sua empresa integrado aos seus equipamentos.'
+                      title: 'Configuração e Testes',
+                      desc: 'Deixamos tudo configurado no celular, na internet ou instalado nos computadores e equipamentos da sua loja.'
                     },
                     {
                       step: '04',
-                      title: 'Treinamento da Equipe & Suporte Direto',
-                      desc: 'Treinamos seus colaboradores (recepção, caixa, profissionais) e acompanhamos de perto a operação.'
+                      title: 'Treinamento da Equipe e Suporte',
+                      desc: 'Ensinamos você e seus funcionários a usarem tudo em poucos minutos e ficamos à disposição no suporte.'
                     }
                   ].map((s, i) => (
                     <div key={i} className="flex items-start gap-4">
@@ -331,24 +330,24 @@ export default function App() {
                 <div className="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div>
                     <div className="text-xs font-semibold text-emerald-400">
-                      Não encontrou seu nicho exato acima?
+                      Seu negócio é de outro ramo?
                     </div>
                     <div className="text-xs text-slate-400">
-                      Desenvolvemos também para oficinas, pet shops, distribuidoras, escritórios e indústrias.
+                      Atendemos também pet shops, oficinas, lojas de roupas, distribuidoras e escritórios.
                     </div>
                   </div>
                   <button
                     type="button"
                     onClick={() =>
                       setQuoteModal({
-                        title: 'Projeto Personalizado Sob Medida',
-                        subtitle: 'Falar direto com Engenheiro Sênior / SRE',
-                        defaultMessage: `Olá! Gostaria de conversar sobre um projeto personalizado com a ${displayBrandName}.`
+                        title: 'Orçamento Personalizado',
+                        subtitle: 'Falar direto com a equipe Aurora',
+                        defaultMessage: `Olá! Gostaria de conversar sobre um sistema ou catálogo personalizado com a ${displayBrandName}.`
                       })
                     }
                     className="w-full sm:w-auto px-5 py-3 rounded-xl bg-white hover:bg-slate-200 text-slate-950 font-bold text-xs shrink-0 transition"
                   >
-                    Solicitar Projeto Customizado
+                    Pedir Orçamento Sob Medida
                   </button>
                 </div>
               </div>
@@ -367,12 +366,12 @@ export default function App() {
             <div>
               <span className="font-bold text-slate-200">{displayBrandName}</span>
               <p className="text-[11px] text-slate-500">
-                Soluções em SPA, Sistemas Cloud e Infraestrutura On-Premise.
+                Catálogo no Celular, Sistema pela Internet e Sistema Instalado na Loja.
               </p>
             </div>
           </div>
           <div>
-            © {new Date().getFullYear()} {displayBrandName}. Engenharia de Software & SRE.
+            © {new Date().getFullYear()} {displayBrandName}. Todos os direitos reservados.
           </div>
         </div>
       </footer>
@@ -405,7 +404,7 @@ export default function App() {
                   type="text"
                   value={clientName}
                   onChange={(e) => setClientName(e.target.value)}
-                  placeholder="Ex: Carlos - Barbearia Vintage"
+                  placeholder="Ex: Carlos - Barbearia Royal"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-indigo-400"
                 />
               </div>
